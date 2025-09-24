@@ -1,0 +1,87 @@
+:root{
+  --brand:#198754;          /* Bootstrap success green */
+  --brand-dark:#146c43;
+}
+
+*{ box-sizing:border-box; }
+body{ font-family:"Poppins",sans-serif; }
+
+.text-brand{ color:var(--brand); }
+
+.navbar{ background:var(--brand); }
+.navbar .nav-link{ color:#fff !important; }
+.navbar .nav-link:hover{ color:#d1fae5 !important; }
+
+.btn-brand{
+  background:var(--brand);
+  border:0;
+  color:#fff;
+}
+.btn-brand:hover{ background:var(--brand-dark); color:#fff; }
+
+.btn-outline-brand{
+  border:1px solid var(--brand);
+  color:var(--brand);
+  background:transparent;
+}
+.btn-outline-brand:hover{
+  background:var(--brand);
+  color:#fff;
+}
+
+/* Hero */
+.hero{
+  padding:140px 0;
+  color:#fff;
+  background:
+    linear-gradient(rgba(25,135,84,.75),rgba(25,135,84,.75)),
+    /* url("https://picsum.photos/id/1015/1600/900") center/cover no-repeat; */
+    url("https://images.unsplash.com/photo-1521737604893-d14cc237f11d?ixlib=rb-4.0.3&auto=format&fit=crop&w=1600&q=80")
+ center/cover no-repeat;
+    /* https://images.unsplash.com/photo-1518770660439-4636190af475?ixlib=rb-4.0.3&auto=format&fit=crop&w=1600&q=80 */
+}
+
+/* Section title */
+.section-title{ text-align:center; margin-bottom:40px; }
+.section-title h2{ font-weight:700; }
+
+/* Cards & hovers */
+.service-card, .portfolio-card, .pricing-card{ border:none; transition:.3s; }
+.service-card:hover, .portfolio-card:hover, .pricing-card:hover{
+  transform:translateY(-6px);
+  box-shadow:0 10px 25px rgba(0,0,0,.1);
+}
+
+/* About stats */
+.stat-box{
+  background:#fff; border-radius:10px; transition:.3s;
+  box-shadow:0 4px 12px rgba(0,0,0,.05);
+}
+.stat-box:hover{ transform:translateY(-6px); background:#f8f9fa; }
+
+/* Team */
+.team-member img{
+  width:140px;height:140px;object-fit:cover;border:4px solid #f8f9fa;transition:.3s;
+}
+.team-member:hover img{ transform:scale(1.08); }
+.team-member .social-links a{ color:#6c757d; transition:.2s; }
+.team-member .social-links a:hover{ color:var(--brand); }
+
+/* Pricing */
+.border-brand{ border-color:var(--brand)!important; }
+
+/* Contact */
+.hover-card{ transition:.4s; }
+.hover-card:hover{ transform:translateY(-8px); box-shadow:0 8px 25px rgba(0,0,0,.15); }
+.animated-input{ border:1px solid #ddd; transition:.3s; }
+.animated-input:focus{
+  border-color:var(--brand) !important;
+  box-shadow:0 0 8px rgba(25,135,84,.25) !important;
+  transform:scale(1.02);
+}
+
+/* Footer */
+footer{ background:#111; color:#aaa; padding:20px 0; }
+
+/* Image fit */
+.card-img-top{ height:220px; object-fit:cover; }
